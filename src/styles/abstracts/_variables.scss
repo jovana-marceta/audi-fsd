@@ -1,0 +1,30 @@
+//------- Fonts
+$font-primary: "Roboto", sans-serif;
+
+//------- Colors
+$black: #000;
+$white: #fff;
+$light: #fefefe;
+$blue-light: #2aace2;
+$blue-light-200: #1d8dbb;
+$blue-dark: #1f242d;
+
+
+
+
+$site-colors: (
+  "black": $black,
+  "white": $white,
+  "blue-light": $blue-light,
+  "blue-dark": $blue-dark
+
+
+) !default;
+
+//------- Screen Resolutions
+
+$sm: 540px;
+$md: 768px;
+$lg: 960px;
+$xl: 1170px;
+

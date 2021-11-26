@@ -1,0 +1,50 @@
+a,
+button {
+	appearance: none;
+	outline: none;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.btn {
+	@extend .roboto-16-medium;
+	display: inline-block;
+	outline: none;
+	text-align: center;
+	transition: 0.4s ease-out;
+	padding: 28px;
+	width: 239px;
+}
+
+.arrow {
+	color: $white;
+	background-color: $blue-light;
+	margin: 1em 0;
+
+	&::after {
+		display: inline-block;
+		padding-left: 20px;
+		content: "\0279E";
+		-webkit-transition: transform 0.3s ease-out;
+		transition: transform 0.3s ease-out;
+		will-change: transform;
+	}
+
+	&:hover {
+		color: $blue-dark;
+		background-color: $blue-light-200;
+
+		&::after {
+			-webkit-transform: translateX(4px);
+			transform: translateX(4px);
+		}
+	}
+}
