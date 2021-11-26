@@ -1,6 +1,6 @@
-# Cerner - Test Project for Mad Duck Code
+# Audi - Test Project 
 
-Website for Cerner company. Coded by Jovana Marčeta
+Website for Audi. Coded by Jovana Marčeta
 
 ## Contributors ✨
 
