@@ -230,6 +230,26 @@
 	font-display: swap;
 }
 
+.m-14-r {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	line-height: 160%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.m-40-b {
+	font-family: 'Montserrat';
+	font-size: 40px;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+
+	@include for-small-screen {
+		font-size: 25px
+	}
+}
+
 .m-50-b {
 	font-family: 'Montserrat';
 	font-size: 50px;
@@ -259,3 +279,23 @@ a {
 h1 {
 	@extend .m-50-b;
 }
+
+h2 {
+	@extend .m-40-b;
+}
+
+p {
+	@extend .m-14-r;
+
+
+}
+
+.pre-heading {
+	@extend .r-12-r;
+	display: block;
+	letter-spacing: 5px;
+	color: $red;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+

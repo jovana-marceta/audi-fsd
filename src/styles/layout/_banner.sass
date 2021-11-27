@@ -1,0 +1,67 @@
+.banner
+	position: relative
+	padding: 100px 0
+
+	
+.banner__content
+	padding: 104px 150px
+	background: $black
+	background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(122,122,122,0.437395026369923) 29%), url(../img/main/section-banner-1920.jpg)
+	background-size: cover
+	object-fit: cover
+	width: 100%
+	background-position: center center
+	background-repeat: no-repeat
+	height: 100%
+
+	@include for-medium-screen
+		padding:  100px 30px
+ 
+
+.banner__heading
+	color: $white
+	margin-bottom: 24px
+
+.banner__paragraph
+	margin-bottom: 45px
+	max-width: 523px
+
+	@include for-medium-screen
+		max-width: 100%
+
+.banner__boxes
+	display: flex
+	gap: 30px
+
+	@include for-medium-screen()
+		flex-direction: column
+
+
+
+.banner__box	
+	padding: 21px
+	background: rgba($gray, 0.3)
+	border: 1px solid rgba($white, 0.2)
+	text-align: center
+	flex: 1
+	max-width: 165px
+
+	@include for-medium-screen()
+		max-width: 100%
+
+	.pre-heading	
+		color: $white
+		letter-spacing: 3px
+		margin-bottom: 14px
+	
+	.banner__box-num
+		font-size: 28px
+		margin-bottom: 2px
+
+	.banner__box-desc
+		font-family: 'Roboto Condensed'
+		font-weight: 300
+		font-style: italic
+		font-size: 17px
+	
+	
