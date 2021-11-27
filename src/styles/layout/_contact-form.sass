@@ -2,6 +2,10 @@
 	position: relative
 	bottom: -122px
 
+	@include for-medium-screen()
+		bottom: auto
+
+
 .contact-form__content
 	@extend %set-flex-align
 	@extend %bg-image
