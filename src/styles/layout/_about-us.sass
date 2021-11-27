@@ -1,0 +1,72 @@
+.about-us
+	padding: 100px 0 0
+	
+.about-us__left
+	text-align: center
+	display: flex
+	align-items: center
+	flex-direction: column
+	position: relative
+
+	@include for-large-screen()
+		margin-bottom: 150px
+
+	&::after
+		content: ""
+		position: absolute
+		width: 354px
+		height: 520px
+		transform: translateY(-50%)
+		top: 50%
+		background-color: $blue-dark
+
+		@include for-large-screen()
+			width: 200px
+			height: 350px
+
+.about-us__content
+	@extend %bg-image
+	display: flex
+	padding: 100px 50px 
+	position: relative
+	justify-content: space-between
+
+	@include for-large-screen()
+		flex-direction: column
+		padding: 100px 50px 0
+
+.about-us__img,
+.about-us__img-desc
+	position: relative
+	z-index: 2
+
+.about-us__img
+	@include for-large-screen()
+		width: 100%
+		object-fit: cover
+
+
+.about-us__right
+	max-width: 658px
+	@include for-large-screen()
+		text-align: center
+		max-width: 100%
+
+
+
+.about-us__heading
+	color: $blue-dark
+	margin-bottom: 44px
+	max-width: 426px
+	@include for-large-screen()
+		max-width: 100%
+
+.about-us__intro
+	font-size: 20px
+	color: $blue-dark
+	margin-bottom: 22px
+	line-height: 30px
+	max-width: 459px
+	@include for-large-screen()
+		max-width: 100%
+
