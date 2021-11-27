@@ -222,6 +222,26 @@
 	font-size: 14px;
 }
 
+.r-12-r {
+	font-family: 'Roboto Condensed';
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.m-50-b {
+	font-family: 'Montserrat';
+	font-size: 50px;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+
+	@include for-small-screen {
+		font-size: 35px
+	}
+}
+
 a {
 	@extend .r-14-l;
 	text-transform: uppercase;
@@ -235,6 +255,7 @@ a {
 	}
 }
 
-// h2 {
-// 	@extend .playfair-40-regular;
-// }
+
+h1 {
+	@extend .m-50-b;
+}

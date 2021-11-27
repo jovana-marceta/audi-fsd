@@ -1,0 +1,84 @@
+.hero {
+	.swiper {
+		position: relative;
+		width: 100%;
+		height: 721px;
+		overflow: hidden;
+	
+		// @include for-medium-screen {
+		// 	height: 700px;
+		// }
+		// @include for-small-screen {
+		// 	height: 600px;
+		// }
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: red;
+	
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+	
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.swiper-button-next:after, .swiper-button-prev:after {
+		font-size: 17px !important;
+	}
+
+	.swiper-button-prev, 
+	.swiper-button-next {
+		color: $white; 	
+		background-color: #262626;
+		border: 1px solid #414141;
+		@include border-radius(5px);
+		padding: 22px 24px;
+	}
+
+	.swiper-button-next {
+		right: 224px;
+	}
+	.swiper-button-prev {
+		left: 224px;
+	}
+
+	.swiper-slide .swiper-content {
+		position: absolute;
+	}
+
+	.swiper-content {
+		text-align: left;
+		position: absolute;
+		max-width: 1116px;
+		width: 100%;
+
+		@include for-extra-large-screen {
+			padding: 0 30px;
+		}
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+
+		@include for-large-screen {
+			bottom: 50px;
+			top: auto;
+		}
+	}
+}

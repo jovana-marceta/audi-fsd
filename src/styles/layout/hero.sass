@@ -1,0 +1,56 @@
+.hero 
+	position: relative
+	overflow: hidden
+
+.hero__pre
+	@extend .r-12-r
+	display: block
+	letter-spacing: 5px
+	color: $red
+	text-transform: uppercase
+	margin-bottom: 10px
+
+.hero__heading
+	color: $white
+	margin-bottom: 23px
+	max-width: 445px
+
+	@include for-medium-screen
+		max-width: 100%
+
+.hero__text 
+	position: relative
+	
+	&::after
+		content: ""
+		position: absolute
+		left: 0
+		height: 2px
+		width: 64px
+		background-color: red
+		top: 50%
+		transform: rotate(90deg) translateY(-50%)
+
+
+.hero__paragraph
+	font-family: $font-secondary
+	font-size: 14px
+	color: $gray
+	padding-left: 70px
+	max-width: 370px
+	line-height: 160%
+
+	@include for-medium-screen
+		max-width: 100%
+
+
+
+.bg-op 
+	@extend %bg-image
+	bottom: 0
+	left: 0
+	position: absolute
+	right: 0
+	top: 0
+	filter: brightness(0.2)
+
