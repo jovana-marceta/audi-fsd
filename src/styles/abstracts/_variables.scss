@@ -11,11 +11,14 @@ $gray: #7D7979;
 $gray-light-100: #6D6D6D;
 $gray-light-200: #333;
 $red: #FA2A2A;
+$green: #011f05;
+$green-light: #26402a;
 
 $site-colors: (
 	"black": $black,
 	"white": $white,
-	"gray": $gray
+	"gray": $gray,
+	"green": $green
 
 ) !default;
 

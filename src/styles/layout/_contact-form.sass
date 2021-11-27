@@ -1,4 +1,5 @@
-
+.contact-form
+	position: relative
 
 .contact-form__content
 	@extend %set-flex-align
@@ -6,3 +7,61 @@
 	padding: 100px 50px 
 	position: relative
 	justify-content: space-between
+	overflow: hidden
+
+	@include for-medium-screen()
+		flex-direction: column
+
+
+.contact-form__left
+	width: 550px
+	align-self: flex-start
+	@include for-medium-screen()
+		max-width: 100%
+		margin-bottom: 50px
+
+.contact-form__group
+	position: relative
+	z-index: 3
+
+.contact-form__right
+	width: 460px
+	padding: 30px
+	position: relative
+	z-index: 3
+
+	@include for-medium-screen()
+		width: 100%
+
+.contact-form__img
+	position: absolute
+	z-index: 2
+	transform: translateX(-30%)
+	bottom: 0
+	left: 0
+
+.form
+	text-align: center
+
+.form__item
+	&:not(:last-child)
+	margin-bottom: 20px
+
+.form__input,
+.form__message
+	width: 100%
+	border: 1px solid #4d6250
+	padding: 0 10px
+	height: 38px
+	background-color: $green-light
+	
+	@include border-radius(2px)
+
+.form__message
+	height: 160px
+	padding: 10px
+
+
+input, select, textarea
+	color: $white
+	text-transform: uppercase
