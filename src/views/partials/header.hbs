@@ -41,28 +41,33 @@
 
 	<body>
 
+
 		<header class="header bg-black">
 			<div class="header__container">
-				<div class="header__left">
-					<a href="javascript:;">
-						<img src="{{header.logo}}" alt="{{header.logo-alt}}" class="header__logo">
-					</a>
-				</div>
-				<div class="header__right">
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a href="javascript:;" class="nav__link">Homepage</a>
-							</li>
-							<li class="nav__item">
-								<a href="javascript:;" class="nav__link">About us</a>
-							</li>
-							<li class="nav__item">
-								<a href="javascript:;" class="nav__link" >Products</a>
-							</li>
-						</ul>
-					</nav>
-					<a href="javascript:;" class="btn btn--primary">Contact us</a>
-				</div>
+				<a href="javascript:;">
+					<img src="{{header.logo}}" alt="{{header.logo-alt}}" class="header__logo"> 
+				</a>
+				<nav class="nav">
+					<ul class="nav__menu | js-nav-menu">
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Homepage</a>
+						</li>
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">About us</a>
+						</li>
+						<li class="nav__item">
+							<a href="javascript:;" class="nav__link">Products</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn btn--primary">Contact us</a>
+						</li>
+					</ul>
+					<div class="hamburger | js-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
 			</div>
 		</header>
+

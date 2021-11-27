@@ -6,7 +6,7 @@ window.jQuery = window.$ = $;
 import device from 'current-device';
 
 require('./app');
-// require('./navigation');
+require('./nav');
 
 
 

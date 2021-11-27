@@ -15,8 +15,6 @@ input[type='submit']
 .btn 
 	@extend .r-14-l
 	@include border-radius(3px)
-	color: $white
-	background-color: $gray-light-200
 	display: inline-block
 	outline: none
 	text-align: center
@@ -24,7 +22,15 @@ input[type='submit']
 	transition: 0.5s background-color ease-out, 0.5s color ease-out
 	will-change: background-color, color
 
-	@include hover
-		background-color: $red
+
+	&--primary 
+		color: $white
+		background-color: $gray-light-200
+		margin-left: 28px
+		@include hover
+			background-color: $red
+		@include for-medium-screen 
+			margin-left: 0
+
 
 
