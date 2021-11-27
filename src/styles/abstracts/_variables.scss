@@ -1,23 +1,19 @@
-//------- Fonts
-$font-primary: "Roboto", sans-serif;
+// //------- Fonts
+// $font-primary: "Roboto", sans-serif;
+
 
 //------- Colors
 $black: #000;
 $white: #fff;
-$light: #fefefe;
-$blue-light: #2aace2;
-$blue-light-200: #1d8dbb;
-$blue-dark: #1f242d;
-
-
-
+$gray: #7D7979;
+$gray-light-100: #6D6D6D;
+$gray-light-200: #333;
+$red: #FA2A2A;
 
 $site-colors: (
-  "black": $black,
-  "white": $white,
-  "blue-light": $blue-light,
-  "blue-dark": $blue-dark
-
+	"black": $black,
+	"white": $white,
+	"gray": $gray
 
 ) !default;
 

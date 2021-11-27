@@ -4,6 +4,10 @@
 	}	
 }
 
+@mixin border-radius($pixel) {
+	border-radius: $pixel;
+}
+
 @mixin absolute-center() {
 	position:absolute;
 	left:50%;

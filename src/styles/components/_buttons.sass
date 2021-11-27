@@ -1,0 +1,30 @@
+a,
+button 
+	appearance: none
+	outline: none
+
+button,
+input[type='button'],
+input[type='submit'] 
+	background: none
+	border: 0
+	cursor: pointer
+	outline: none
+	padding: 0
+
+.btn 
+	@extend .r-14-l
+	@include border-radius(3px)
+	color: $white
+	background-color: $gray-light-200
+	display: inline-block
+	outline: none
+	text-align: center
+	padding: 17px 31px
+	transition: 0.5s background-color ease-out, 0.5s color ease-out
+	will-change: background-color, color
+
+	@include hover
+		background-color: $red
+
+
