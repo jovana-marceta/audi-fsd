@@ -2,7 +2,7 @@
 
 Website for Audi. Coded by Jovana Marčeta
 
-## Contributors ✨
+## Author ✨
 
 
 <table>
