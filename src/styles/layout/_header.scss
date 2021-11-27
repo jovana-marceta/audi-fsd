@@ -1,10 +1,17 @@
+.header {
+	background-color: transparent;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
 .header__container {
 	@extend .wrapper;
-	max-width: 1375px;
+	max-width: 1425px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 40px 0;
+	padding: 40px 0 20px 40px;
+	
 
 	@include for-medium-screen {
 		padding: 40px 30px;
@@ -41,10 +48,36 @@
 }
 
 .nav__item {
-	padding: 0 24px;
+	padding: 0 24px 20px;
+	position: relative;
 
 	@include for-medium-screen {
 		padding: 20px 0;
+	}
+
+	@include hover {
+
+		.nav__link {
+			color: $white;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 100px;
+			background-color: red;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+	}
+
+	&:last-child {
+		&::after {
+			display: none;
+		}
 	}
 
 }
@@ -52,5 +85,6 @@
 .nav__link {
 	display: inline-block;
 	text-transform: uppercase;
+
 }
 
