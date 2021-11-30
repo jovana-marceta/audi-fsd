@@ -7,6 +7,7 @@ import device from 'current-device';
 require('./app');
 require('./nav');
 require('./swiper');
+require('./dropdown-menu');
 
 
 

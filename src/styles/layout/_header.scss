@@ -62,17 +62,6 @@
 			color: $white;
 		}
 
-		// &::after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	height: 2px;
-		// 	width: 100px;
-		// 	background-color: red;
-		// 	bottom: 0;
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// }
-
 		.dropdown {
 			display: block;
 
@@ -98,7 +87,7 @@
 	display: none;
 	position: absolute;
 	background-color: rgba(255,255,255,0.15);
-	padding: 10px;
+	padding: 15px;
 	top: 100%;
 	left: auto;
 	border-top: 1px solid $red;
@@ -108,9 +97,15 @@
 .dropdown__item {
 	width: 140px;
 	padding: 14.5px 0;
+	transition: 0.3s background-color ease-in-out;
+	will-change: background-color;
 	
 	&:not(:last-child) {
 		border-bottom: 1px solid $gray-light-300;
+	}
+
+	@include hover {
+		background-color: rgba($black, 0.5);
 	}
 
 }
@@ -119,24 +114,28 @@
 	@extend .r-13-r;
 	text-transform: capitalize;
 	color: $white;
-
-	// @include hover {
-	// 	background-color: red;
-	// }
-
 }
 
 
 .hasBorderBottom {
 	position: relative;
-		&:hover::after {
+
+	@include hover {
+		&::after {
 			content: "";
 			position: absolute;
-			height: 2px;
+			height: 1px;
 			width: 100px;
-			background-color: red;
+			background-color: $red;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
 		}
+
+		@include for-medium-screen {
+			display: none;
+		}
+	}
+
+
 }
