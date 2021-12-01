@@ -25,25 +25,66 @@
 	position: absolute
 	top: 0
 	left: 0
-	background-color: rgba(0, 0, 0, 0.5)
+	background-color: rgba($blue-dark, 0.8)
 	z-index: -1
 
 .modal-inner 
-	padding: 50px
-	background-color: #fff
 	transform: translateY(-30px)
 	transition: 0.3s transform
+	min-width: 944px
+
+	position: relative
+
+	@include border-radius(15px)
+	// padding: 30px
 
 
-.modal-close 
-  position: absolute
-  top: 50px
-  right: 50px
-  background-color: red
-  width: 50px
-  height: 50px
-  display: flex
-  align-items: center
-  justify-content: center
-  cursor: pointer
+.modal-content
+	@extend %set-flex-align
+	text-align: center
 
+.modal-content__left
+	background-color: $white-300
+	padding: 34px 80px
+	border-top-left-radius: 15px
+	border-bottom-left-radius: 15px
+
+	span
+		@extend  .m-14-r
+		color: $gray-light-500
+
+.modal-content__title-left
+	@extend  .m-24-m
+	color: $blue-dark
+	margin-bottom: 40px
+
+.modal-content__right
+	background-color: $white
+	padding: 30px
+	align-self: flex-start
+	text-align: left
+	width: 100%
+
+	h3
+		@extend .m-18-sb
+		color: $blue-dark
+		margin-bottom: 6px
+
+	p
+		margin-bottom: 34px
+
+
+.cell
+	&:not(:last-child)
+		margin-bottom: 15px
+	
+.cell-container
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.cell-input
+	@extend %set-flex-align
+
+	.mask
+		padding-left: 10px

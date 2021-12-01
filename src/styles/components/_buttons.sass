@@ -49,7 +49,33 @@ input[type='submit']
 			background-color: $white
 			border: 1px solid $red
 
+	&--price
+		@extend .r-13-r
+		line-height: 13px
+		text-transform: capitalize
+		background-color: $blue-dark
+		padding: 13px 60px
+		width: 222px
+		margin-bottom: 2px
+		@include border-radius(15px)
+
+	#price
+		@extend .m-24-l
 	
+.js-modal-button
+	display: flex
+	align-items: center
+	justify-content: center
+	background: $blue-dark
+	height: 43px
+	width: 43px
 
+	position: absolute
+	top: 0
+	right: 0
+	transform: translateX(50%) translateY(-50%) 
 
+	@include border-radius(50%)
 
+	svg
+		color: $white

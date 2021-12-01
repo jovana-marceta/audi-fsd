@@ -250,6 +250,14 @@
 	// letter-spacing: 0.5px;
 }
 
+.m-24-l {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
 .m-12-r {
 	font-family: 'Montserrat';
 	font-size: 12px;
@@ -315,6 +323,22 @@
 	@include for-small-screen {
 		font-size: 35px
 	}
+}
+
+.m-24-m {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.m-18-sb {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 a {

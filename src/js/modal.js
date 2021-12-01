@@ -13,10 +13,8 @@ const closeModal = (modal) => {
 
 modals.forEach(modal => {
 	const modalBackground = modal.querySelector('.js-modal-bg');
-	const modalClose = modal.querySelector('.js-modal-close');
 	const modalButton = modal.querySelector('.js-modal-button');
 
 	modalBackground.addEventListener('click', () => closeModal(modal))
-	modalClose.addEventListener('click', () => closeModal(modal))
 	modalButton.addEventListener('click', () => closeModal(modal))
 })

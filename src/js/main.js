@@ -10,7 +10,5 @@ require('./swiper');
 require('./dropdown-menu');
 require('./products');
 require('./modal');
-
-
-
+require('./other/checkbox');
 
