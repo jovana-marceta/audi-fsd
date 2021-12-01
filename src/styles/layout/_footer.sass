@@ -1,12 +1,9 @@
 
 .footer	
-	padding: 100px 0 0
-	position: absolute
 	width: 100%
 
 	@include for-medium-screen
-		padding: 50px 0
-		background-color: $black
+		padding: 20px 0
 
 .footer__content	
 	@extend %set-flex-align
@@ -19,6 +16,9 @@
 .footer__links
 	@extend %set-flex-align
 	gap: 20px
+
+	@include for-medium-screen
+		flex-direction: column
 
 .footer__copyright
 	margin-bottom: 20px

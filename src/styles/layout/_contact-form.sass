@@ -1,15 +1,15 @@
 .contact-form
 	position: relative
-	bottom: -122px
-
+	
 	@include for-medium-screen()
 		bottom: auto
 
+.contact-form__container
+	background: linear-gradient(135deg, #282A2F 0%, #000000 100%)
 
 .contact-form__content
 	@extend %set-flex-align
 	@extend %bg-image
-	background: linear-gradient(135deg, #282A2F 0%, #000000 100%)
 	padding: 100px 50px 
 	position: relative
 	justify-content: space-between

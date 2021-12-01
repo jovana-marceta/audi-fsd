@@ -36,12 +36,20 @@
 	position: relative
 
 	@include border-radius(15px)
-	// padding: 30px
+	
+	@include for-large-screen()
+		min-width: 400px
+
+	@include for-small-screen()
+		min-width: 250px
 
 
 .modal-content
-	@extend %set-flex-align
+	display: flex
 	text-align: center
+
+	@include for-small-screen()
+		flex-direction: column
 
 .modal-content__left
 	background-color: $white-300
@@ -64,6 +72,7 @@
 	align-self: flex-start
 	text-align: left
 	width: 100%
+	border-bottom-right-radius: 15px
 
 	h3
 		@extend .m-18-sb
@@ -77,8 +86,12 @@
 .cell
 	&:not(:last-child)
 		margin-bottom: 15px
+		padding-bottom: 14px
+		border-bottom: 1px solid #F1F1F1
 	
 .cell-container
+	@extend .m-14-r
+	color: $blue-dark
 	display: flex
 	align-items: center
 	justify-content: space-between
