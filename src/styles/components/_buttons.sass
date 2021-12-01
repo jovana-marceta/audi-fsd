@@ -22,8 +22,6 @@ input[type='submit']
 	transition: 0.5s background-color ease-out, 0.5s color ease-out
 	will-change: background-color, color
 	color: $white
-	@include hover
-		background-color: $red
 
 
 	&--primary 
@@ -31,11 +29,26 @@ input[type='submit']
 		margin-left: 2px
 		@include for-medium-screen 
 			margin-left: 0
+		@include hover
+			background-color: $red
 			
 	&--secondary
 		@extend .r-14-l
 		text-transform: uppercase
 		border: 1px solid #4d6250
+
+	&--third
+		@extend .r-13-r
+		border: 1px solid transparent
+		color: $red
+		padding: 9px 18px
+		background-color: rgba(250,42,42,0.1)
+		@include border-radius(17px)
+
+		@include hover
+			background-color: $white
+			border: 1px solid $red
+
 	
 
 

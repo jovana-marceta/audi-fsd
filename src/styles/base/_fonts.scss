@@ -234,11 +234,20 @@
 
 .r-13-r {
 	font-family: 'Roboto Condensed';
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.r-13-r {
+	font-family: 'Roboto Condensed';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 13px;
-	line-height: 15px;
-	letter-spacing: 0.5px;
+	line-height: 16px;
+	// letter-spacing: 0.5px;
 }
 
 .m-12-r {
