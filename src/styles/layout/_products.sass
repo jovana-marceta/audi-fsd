@@ -1,9 +1,17 @@
 
+
+.products__content
+	padding: 100px 50px 
+
+
 .tabs
-	display: flex	
-	align-items: center
+	@extend  %set-flex-align
 	justify-content: center
 	margin-bottom: 42px
+
+	@include for-large-screen() 
+		flex-direction: column
+
 
 .tab
 	@extend .m-16-r
@@ -12,8 +20,16 @@
 	text-transform: capitalize
 	position: relative
 
+	@include for-large-screen() 
+		padding: 10px 0
+		margin: 10px 0
+		
+
 	&.active-tab
 		color: $blue-dark
+
+		transition: color 0.3s, background-color 0.3s
+		will-change: color, background-color
 
 		&::after 
 			content: ""
@@ -36,3 +52,69 @@
 
 .active-tab[data-tab-content] 
 	display: block
+
+.products__group
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	grid-auto-rows: auto
+	grid-gap: 29px
+
+	@include for-large-screen() 
+		grid-template-columns: repeat(2, 1fr)
+
+	@include for-small-screen() 
+		grid-template-columns: repeat(1, 1fr)
+
+.products__card
+	@include border-radius(3px)
+	cursor: pointer
+	background-color: $white
+	border: 1px solid $white-200
+	box-shadow: 0 15px 25px -20px rgba(0,0,0,0.1)
+	padding: 20px
+	display: flex
+	flex-direction: column
+
+
+.product__card-intro
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 15px
+
+	span 
+		@extend .m-14-r
+		line-height: 18px
+		color: $gray-light-500
+		margin-bottom: 5px
+		display: block
+
+	img 
+		display: block
+		max-width: 192px
+		width: 100%
+		height: auto
+		object-fit: cover
+		margin-bottom: 14px
+
+	a
+		@extend  .m-12-r
+		color: $blue
+		text-transform: capitalize
+
+
+.products__card-list
+
+	margin-bottom: 20px
+	
+	li
+		@extend .m-13-r 
+		color: $gray-light-500
+
+.products__card-title
+	color: $blue-dark
+	margin-bottom: 5px
+
+.product__card-price
+	@extend %set-flex-align
+	justify-content: space-between

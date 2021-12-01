@@ -241,6 +241,23 @@
 	letter-spacing: 0.5px;
 }
 
+.m-12-r {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: -0.5px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.m-13-r {
+	font-family: 'Montserrat';
+	font-size: 13px;
+	line-height: 30px;
+	font-weight: normal;
+	font-style: normal;
+}
+
 .m-14-r {
 	font-family: 'Montserrat';
 	font-size: 14px;
@@ -255,6 +272,14 @@
 	font-style: normal;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.m-20-b {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .m-38-b {
@@ -303,6 +328,10 @@ h1 {
 
 h2 {
 	@extend .m-38-b;
+}
+
+h3 {
+	@extend .m-20-b
 }
 
 p {
