@@ -1,0 +1,49 @@
+.modal 
+	position: fixed
+	top: 0%
+	left: 0
+	width: 100%
+	height: 100vh
+	opacity: 0
+	visibility: hidden
+	transition: 0.3s opacity, 0.3s visibility
+	z-index: 50
+	display: flex
+	justify-content: center
+	align-items: center
+
+.modal.modal-active
+	opacity: 1
+	visibility: visible
+
+.modal.modal-active .modal-inner 
+	transform: none
+
+.modal-bg 
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, 0.5)
+	z-index: -1
+
+.modal-inner 
+	padding: 50px
+	background-color: #fff
+	transform: translateY(-30px)
+	transition: 0.3s transform
+
+
+.modal-close 
+  position: absolute
+  top: 50px
+  right: 50px
+  background-color: red
+  width: 50px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+

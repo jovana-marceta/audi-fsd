@@ -9,6 +9,7 @@ require('./nav');
 require('./swiper');
 require('./dropdown-menu');
 require('./products');
+require('./modal');
 
 
 
