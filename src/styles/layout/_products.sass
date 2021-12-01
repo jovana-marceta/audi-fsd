@@ -1,11 +1,38 @@
+
+.tabs
+	display: flex	
+	align-items: center
+	justify-content: center
+	margin-bottom: 42px
+
+.tab
+	@extend .m-16-r
+	color: $gray-light-500
+	padding: 0 50px 10px
+	text-transform: capitalize
+	position: relative
+
+	&.active-tab
+		color: $blue-dark
+
+		&::after 
+			content: ""
+			position: absolute
+			height: 2px
+			width: 100px
+			background-color: $red
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+
 .products__heading 
 	text-align: center
 	color: $blue-dark
 	margin-bottom: 60px
 
 [data-tab-content] 
-  display: none
+	display: none
 
 
 .active-tab[data-tab-content] 
-  display: block
+	display: block
