@@ -130,9 +130,9 @@
 			transform: translateX(-50%);
 		}
 
-		// @include for-medium-screen {
-		// 	display: none;
-		// }
+		@include for-medium-screen {
+			display: none;
+		}
 	}
 
 

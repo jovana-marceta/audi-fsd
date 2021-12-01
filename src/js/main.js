@@ -8,6 +8,7 @@ require('./app');
 require('./nav');
 require('./swiper');
 require('./dropdown-menu');
+require('./products');
 
 
 
