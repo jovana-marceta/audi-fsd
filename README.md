@@ -29,7 +29,7 @@ Website for Audi. Coded by Jovana Marčeta.
 
 ### Install
 
-1. Install **NodeJS** and **yarn** (it needs older Node version - 12. If you don't have it on your ps type command nvm install 12.0.0 and then nvm use 12.0.0 and you are ready.
+1. Install **NodeJS** and **yarn** (it needs older Node version - 12. If you don't have it on your ps type command nvm install 12.0.0 and then nvm use 12.0.0 and you are ready. 
 2. Clone this repository
 3. Run `yarn install`
 
@@ -41,7 +41,7 @@ Website for Audi. Coded by Jovana Marčeta.
 | :construction: |  `gulp`                     | Compile dev build, start the server and watch for changes | Development |
 | :factory:      |  `gulp build --production` | Compile production build                                  | Production  |
 
-
+Important: Don't forget to install gulp & gulp-cli globally!
 ## Features
 
 | Type           | List                                                         |
