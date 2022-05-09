@@ -1,6 +1,6 @@
 # Audi - Test Project 
 
-Website for Audi. Coded by Jovana Marčeta
+Website for Audi. Coded by Jovana Marčeta. 
 
 ## Author ✨
 
@@ -29,7 +29,7 @@ Website for Audi. Coded by Jovana Marčeta
 
 ### Install
 
-1. Install **NodeJS** and **yarn**
+1. Install **NodeJS** and **yarn** (it needs older Node version - 12. If you don't have it on your ps type command nvm install 12.0.0 and then nvm use 12.0.0 and you are ready.
 2. Clone this repository
 3. Run `yarn install`
 
